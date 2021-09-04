@@ -1,0 +1,1 @@
+﻿HideShowIconTray.IconTrayHelper.ShowIconTray();

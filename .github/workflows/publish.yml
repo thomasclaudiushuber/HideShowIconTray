@@ -1,0 +1,35 @@
+name: Publish
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Publish
+      run: dotnet publish --configuration Release --framework net5.0 --runtime win-x86 --self-contained
+    - name: Upload HideIconTray artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: HideIconTray
+        path: /home/runner/work/HideIconTray/HideIconTray/HideIconTray/bin/Release/net5.0/win-x86/publish/
+    - name: Upload ShowIconTray artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: ShowIconTray
+        path: /home/runner/work/HideIconTray/HideIconTray/ShowIconTray/bin/Release/net5.0/win-x86/publish/
