@@ -8,6 +8,6 @@ This program can hide and show the full icon tray in the Windows 11 taskbar.
 a) Either compile and use the program on your own or
 
 b) use the already compiled self-contained executable that will just work on your Windows machine:
-  1) Download this .zip file from here: https://github.com/thomasclaudiushuber/HideIconTray/releases/download/v1.0/HideIconTray1.0.zip
+  1) Download this .zip file from here: https://github.com/thomasclaudiushuber/HideIconTray/releases/download/v1.0/HideShowIconTray1.0.zip
   2) Extract the files
   3) Run the HideIconTray.exe file and the icon tray will disapear. Run the ShowIconTray.exe to show it again.
