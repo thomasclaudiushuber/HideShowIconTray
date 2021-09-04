@@ -1,9 +1,9 @@
-# HideIconTray
+# ShowHideIconTray
 Hides and shows the icon tray in Windows 11. In the first edition of Windows 11, there seems to be no option for a user to hide the clock.
 
 This program can hide and show the full icon tray in the Windows 11 taskbar.
 
-How to use it:
+## How to use it
 
 a) Either compile and use the program on your own or
 
